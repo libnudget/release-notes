@@ -1,0 +1,30 @@
+name: "release-notes"
+description: "Generate grouped release notes from merged pull requests."
+author: "libnudget"
+branding:
+  icon: "file-text"
+  color: "green"
+
+inputs:
+  token:
+    description: "GitHub token with access to the repository."
+    required: true
+    default: ${{ github.token }}
+  from-tag:
+    description: "Tag to generate notes from (exclusive). Defaults to the latest tag."
+    required: false
+  to-ref:
+    description: "Commit or ref to generate notes up to (inclusive). Defaults to the current SHA."
+    required: false
+  output-file:
+    description: "Path to write the release notes to."
+    required: false
+    default: "RELEASE_NOTES.md"
+
+outputs:
+  notes:
+    description: "The generated release notes."
+
+runs:
+  using: "node24"
+  main: "dist/src/index.js"

@@ -1,0 +1,21 @@
+{
+  "name": "@libnudget/release-notes",
+  "version": "0.1.0",
+  "description": "Generate grouped release notes from merged pull requests.",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "test": "tsc && node --test \"dist/test/**/*.test.js\""
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

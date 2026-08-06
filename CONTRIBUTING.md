@@ -2,15 +2,17 @@
 
 Thanks for your interest in this project.
 
-It is in early development, so please open an issue to discuss any changes
-before submitting a pull request.
+Please open an issue to discuss changes before submitting a pull request.
 
 ## Getting started
 
 1. Fork the repository.
 2. Create a branch.
 3. Make your changes.
-4. Open a pull request.
+4. Run the checks: `npm install`, `npm run lint`, and `npm test`.
+5. Rebuild the compiled output with `npm run build` and commit it, since
+   the action runs `dist/src/index.js`.
+6. Open a pull request.
 
 ## Guidelines
 
