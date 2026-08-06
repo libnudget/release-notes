@@ -1,5 +1,7 @@
 # release-notes
 
+[![Release](https://img.shields.io/github/v/release/libnudget/release-notes?logo=github&label=latest)](https://github.com/libnudget/release-notes/releases)
+
 A GitHub Action that turns merged pull requests into clean, grouped
 release notes.
 
