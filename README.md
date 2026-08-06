@@ -10,7 +10,7 @@ GitHub release.
 ## Usage
 
 ```yaml
-- uses: libnudget/release-notes@v0.1.0
+- uses: libnudget/release-notes@main
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -20,7 +20,7 @@ This compares against the latest tag and writes `RELEASE_NOTES.md`.
 To control the range explicitly:
 
 ```yaml
-- uses: libnudget/release-notes@v0.1.0
+- uses: libnudget/release-notes@main
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     from-tag: v0.1.0
